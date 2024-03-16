@@ -49,7 +49,7 @@
         <section class="hero-section">
             <div class="container hero-container">
                 <h1 class="hero-section__title">Effective Solutions for Your Business</h1>
-                <button class="button button--primary" type="button">Order service</button>
+                <button data-modal-open class="button button--primary" type="button">Order service</button>
             </div>
         </section>
         <section class="section">
@@ -148,6 +148,16 @@
             </p>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div role="dialog" aria-modal="true" class="modal">
+            <button data-modal-close aria-label="Close modal button" class="modal-button" type="button">
+                <svg class="modal-button__icon" width="8" height="8">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/modal.js"></script>
 </body>
 
 </html>
