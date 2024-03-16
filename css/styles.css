@@ -159,7 +159,6 @@ img {
   display: flex;
   align-items: center;
   gap: 76px;
-  padding: 24px 0;
 }
 
 .nav-menu {
@@ -169,14 +168,37 @@ img {
 }
 
 .nav-menu__link {
+  display: block;
   line-height: var(--line-height-base);
   font-weight: 500;
   color: var(--dark-color);
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  position: relative;
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
+.nav-menu__link::after {
+  content: '';
+  width: 100%;
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.nav-menu__link.nav-menu__link--active,
+.nav-menu__link:focus,
 .nav-menu__link:hover {
   color: var(--pressed-state-color);
+}
+
+.nav-menu__link.nav-menu__link--active::after {
+  opacity: 1;
 }
 
 .address-list {
