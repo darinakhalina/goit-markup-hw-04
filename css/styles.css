@@ -275,6 +275,12 @@ img {
   gap: 24px;
 }
 
+.advantages-list__item-icon-holder {
+  padding: 24px 100px;
+  background-color: var(--light-color);
+  margin-bottom: 8px;
+}
+
 .advantages-list__item-title {
   color: var(--dark-color);
   font-size: 20px;
