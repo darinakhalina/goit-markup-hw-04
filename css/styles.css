@@ -350,6 +350,36 @@ img {
   margin-bottom: 8px;
 }
 
+.team-card__contacts {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.team-card__contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-brand-color);
+  color: var(--light-color);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.team-card__contact-link:focus,
+.team-card__contact-link:hover {
+  background-color: var(--pressed-state-color);
+}
+
+.team-card__contact-link-icon {
+  fill: currentColor;
+}
+
 .portfolio-section {
   padding: 96px 0 var(--section-padding);
 }
