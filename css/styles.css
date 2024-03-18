@@ -448,6 +448,42 @@ img {
   transform: translateY(0);
 }
 
+.customers-title {
+  color: var(--dark-color);
+  font-size: 36px;
+  line-height: 1.11112;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customer-logo {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 4px;
+  color: var(--subtle-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
+}
+
+.customer-logo__icon {
+  fill: currentColor;
+}
+
+.customer-logo:focus,
+.customer-logo:hover {
+  color: var(--pressed-state-color);
+  border-color: var(--pressed-state-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
