@@ -228,12 +228,55 @@ img {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+}
+
+.footer-container__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container__col:not(:last-child) {
+  margin-right: 120px;
 }
 
 .footer .logo {
   margin-bottom: 16px;
+}
+
+.footer-contacts-title {
+  font-weight: 500;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-brand-color);
+  color: var(--light-color);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.footer-contact:focus,
+.footer-contact:hover {
+  background-color: var(--success-color);
+}
+
+.footer-contact__icon {
+  fill: currentColor;
 }
 
 .hero-section {
